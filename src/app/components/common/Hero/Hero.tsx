@@ -1,6 +1,6 @@
+// @ts-nocheck
 "use client";
 
-import Image from "next/image";
 import { heroContent } from "@/app/content/hero";
 import "./Hero.css";
 

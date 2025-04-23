@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { howItWorksContent } from "@/app/content/how-it-works";
 import "./HowItWorks.css";
 

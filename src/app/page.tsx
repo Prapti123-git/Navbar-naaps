@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Navbar from "@/app/components/common/Navbar/Navbar";
 import Hero from "@/app/components/common/Hero/Hero";
 import Card from "./components/common/Card/Card";

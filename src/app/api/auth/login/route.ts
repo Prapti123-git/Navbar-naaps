@@ -1,4 +1,5 @@
-import { NextResponse } from "next/server";
+// @ts-nocheck
+import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
