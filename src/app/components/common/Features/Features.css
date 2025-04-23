@@ -1,0 +1,19 @@
+.features {
+  background-color: #fff;
+}
+
+.feature-card {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card img {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover img {
+  transform: scale(1.05);
+} 

@@ -12,14 +12,16 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">Look Loom</div>
+      <Link href="/" className="logo">
+        Look Loom
+      </Link>
 
       {/* Desktop Menu */}
       <div className="menu">
-        <Link href="#" className="nav-link">
+        <Link href="/how-it-works" className="nav-link">
           How It Works
         </Link>
-        <Link href="#" className="nav-link">
+        <Link href="/pricing" className="nav-link">
           Pricing
         </Link>
         <div className="dropdown">
@@ -34,23 +36,27 @@ export default function Navbar() {
           </button>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <Link href="#" className="dropdown-item nav-link">
+              <Link href="/blog" className="dropdown-item nav-link">
                 Blog
               </Link>
-              <Link href="#" className="dropdown-item nav-link">
+              <Link href="/guides" className="dropdown-item nav-link">
                 Guides
               </Link>
-              <Link href="#" className="dropdown-item nav-link">
+              <Link href="/support" className="dropdown-item nav-link">
                 Support
               </Link>
             </div>
           )}
         </div>
-        <Link href="#" className="nav-link">
+        <Link href="/login" className="nav-link">
           Login
         </Link>
-        <button className="get-started">Get Started</button>
-        <button className="try-now-button">Try Now</button>
+        <Link href="/get-started" className="get-started">
+          Get Started
+        </Link>
+        <Link href="/how-it-works" className="try-now-button">
+          Try Now
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
@@ -61,10 +67,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <Link href="#" className="nav-link">
+          <Link href="/how-it-works" className="nav-link">
             How It Works
           </Link>
-          <Link href="#" className="nav-link">
+          <Link href="/pricing" className="nav-link">
             Pricing
           </Link>
           <div className="dropdown">
@@ -79,23 +85,27 @@ export default function Navbar() {
             </button>
             {dropdownOpen && (
               <div className="dropdown-menu">
-                <Link href="#" className="dropdown-item">
+                <Link href="/blog" className="dropdown-item">
                   Blog
                 </Link>
-                <Link href="#" className="dropdown-item">
+                <Link href="/guides" className="dropdown-item">
                   Guides
                 </Link>
-                <Link href="#" className="dropdown-item">
+                <Link href="/support" className="dropdown-item">
                   Support
                 </Link>
               </div>
             )}
           </div>
-          <Link href="#" className="nav-link">
+          <Link href="/login" className="nav-link">
             Login
           </Link>
-          <button className="get-started">Get Started</button>
-          <button className="get-started">Try Now</button>
+          <Link href="/get-started" className="get-started">
+            Get Started
+          </Link>
+          <Link href="/how-it-works" className="get-started">
+            Try Now
+          </Link>
         </div>
       )}
     </nav>

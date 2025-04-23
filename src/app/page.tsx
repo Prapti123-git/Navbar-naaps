@@ -1,13 +1,31 @@
-import Navbar from "./components/common/Navbar/Navbar";
+import Navbar from "@/app/components/common/Navbar/Navbar";
+import Hero from "@/app/components/common/Hero/Hero";
 import Card from "./components/common/Card/Card";
+import FAQ from "./components/common/FAQ/FAQ";
+import Testimonials from "./components/common/Testimonials/Testimonials";
+import HowItWorks from "./components/common/HowItWorks/HowItWorks";
+import TrustedBrands from "./components/common/TrustedBrands/TrustedBrands";
 
 export default function Home() {
   return (
-    <div>
+    <main className="bg-white">
       <Navbar />
+      <Hero />
+      <HowItWorks />
+      <TrustedBrands />
       <main className="pt-16 px-6">
-        <h1 className="text-3xl font-bold">Welcome to Look Loom</h1>
-        <p className="mt-4 text-gray-600">This is the homepage content.</p>
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-5xl font-medium mb-6 text-black">
+            LookLoom's AI fashion models will revolutionize{" "}
+            <span className="italic">your</span> business
+          </h2>
+          <p className="text-xl text-gray-700 mb-4">
+            LookLoom makes creating amazing images of your clothing a breeze, and affordable.
+          </p>
+          <p className="text-xl text-gray-700">
+            Our AI generated models for fashion allow you to:
+          </p>
+        </div>
         <div>
           <Card
             imageUrl="https://cdn.prod.website-files.com/66fa67b1f207f846cd05b5a1/67768b992eea46ce3d813aed_Botika_Homepage_AIGeneratedModelsforFashion_SaveMoney.avif"
@@ -39,6 +57,10 @@ export default function Home() {
           />
         </div>
       </main>
-    </div>
+      
+      
+      <Testimonials />
+      <FAQ />
+    </main>
   );
 }
