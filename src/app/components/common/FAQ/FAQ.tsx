@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { faqData, faqContent } from "@/app/content/faq";
 import "./FAQ.css";
-import Hero from '@/app/components/common/Hero/Hero'
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

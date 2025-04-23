@@ -32,9 +32,9 @@ export async function POST(request: Request) {
       { success: false, message: "Missing required fields" },
       { status: 400 }
     );
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json(
-      { success: false, message: "Internal server error" },
+      { success: false, message: "Internal server error" + error.message },
       { status: 500 }
     );
   }

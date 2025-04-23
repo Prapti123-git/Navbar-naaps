@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { testimonials, testimonialsContent } from "@/app/content/testimonials";
 import "./Testimonials.css";
